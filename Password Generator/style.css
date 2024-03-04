@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+
+    letter-spacing: -0.025em;
+}
+
+.subheading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+
+.seperating-line {
+    border: 1px solid #3a506b;
+    width: 30%;
+    margin: auto;
+}
+
+.seperating-linea {
+    border-top: 1px solid #2ec4b6;
+}
+
+.password-btn {
+    background: #3a506b;
+    color: #E0E1DD;
+    border: none;
+    margin: 50px;
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+
+.password-btn:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #1ad467bd;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.password {
+    display: inline-block;
+    min-width: 25%;
+    font-size: 18px;
+    background: #3a506b;
+    border-radius: 6px;
+    margin: 20px auto;
+    padding: 20px 20px;
+    color: #E0E1DD;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.test {
+    border: 1px solid red;
+}

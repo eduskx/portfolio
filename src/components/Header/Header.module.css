@@ -11,6 +11,7 @@
   position: fixed;
   width: 100%;
   background-color: var(--color-primary);
+  z-index: 10;
 }
 
 .divider {

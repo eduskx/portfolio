@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "nanoid": "^5.0.7",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-multi-carousel": "^2.8.5",
+    "webpack": "^5.94.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",
+    "css-loader": "^7.1.2",
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
     "postcss": "^8",
+    "style-loader": "^4.0.0",
     "tailwindcss": "^3"
   }
 }

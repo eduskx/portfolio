@@ -1,9 +1,9 @@
-import ProjectCard from "@/components/ProjectCard";
+import ProjectSlider from "@/components/ProjectsSlider";
 
 export default function HomePage() {
   return (
     <>
-      <ProjectCard title="HAMMERHART" projectNumber="01" />
+      <ProjectSlider />
     </>
   );
 }

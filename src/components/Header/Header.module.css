@@ -10,6 +10,7 @@
   flex-direction: column;
   position: fixed;
   width: 100%;
+  background-color: var(--color-primary);
 }
 
 .divider {

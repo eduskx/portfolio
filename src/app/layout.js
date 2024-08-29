@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header links={["Projects", "About Me", "Test"]} />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

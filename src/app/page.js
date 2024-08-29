@@ -1,3 +1,9 @@
+import ProjectCard from "@/components/ProjectCard";
+
 export default function HomePage() {
-  return <div style={{ height: "200vh" }}></div>;
+  return (
+    <>
+      <ProjectCard title="HAMMERHART" projectNumber="01" />
+    </>
+  );
 }

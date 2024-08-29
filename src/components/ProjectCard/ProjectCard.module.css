@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: 1px solid red;
+  margin: auto;
+  position: relative;
+}
+
+.projectNumber {
+  text-align: right;
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  left: -30px;
+  top: 20px;
+}

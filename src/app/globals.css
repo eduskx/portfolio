@@ -8,6 +8,14 @@ body {
   color: white;
 }
 
+main {
+  padding-top: 128px;
+}
+
+p {
+  line-height: 1.3rem;
+}
+
 :root {
   --color-primary: #24262c;
 }

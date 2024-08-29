@@ -1,0 +1,19 @@
+.ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 32px 0 16px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+}
+
+.divider {
+  border: 1px solid white;
+  width: 90%;
+  align-self: center;
+}

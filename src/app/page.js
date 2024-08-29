@@ -1,3 +1,3 @@
 export default function HomePage() {
-  return <h1>Hi</h1>;
+  return <div style={{ height: "200vh" }}></div>;
 }

@@ -18,6 +18,7 @@
 .title {
   position: absolute;
   left: -32px;
+  top: 4px;
   font-size: 35px;
   color: var(--color-secondary);
   font-weight: 500;

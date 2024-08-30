@@ -7,7 +7,7 @@ export default function ProjectCard({ project }) {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>{title}</h2>
+      <h3 className={styles.title}>{title}</h3>
       <p className={styles.projectNumber}>({id})</p>
       <Image
         src={imageUrl}

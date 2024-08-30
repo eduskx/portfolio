@@ -16,7 +16,7 @@ export default function InfoBox({ title, image, name }) {
         <p className={styles.arrow}>⬇</p>
         <h1 className={styles.name}>{name}</h1>
       </div>
-      <div className={styles.divider}></div>
+      <div className="section-divider"></div>
     </section>
   );
 }

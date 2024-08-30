@@ -1,7 +1,7 @@
 .image {
   object-fit: cover;
   width: auto;
-  margin-bottom: 96px;
+  /* margin-bottom: 96px; */
 }
 
 .title {
@@ -16,17 +16,11 @@
   color: var(--color-secondary);
   text-align: right;
   position: absolute;
-  bottom: 64px;
+  bottom: -24px;
 }
 
 .container {
-  padding-bottom: 64px;
-}
-
-.divider {
-  border: 1px solid var(--color-secondary);
-  margin-left: -32px;
-  width: 80%;
+  /* padding-bottom: 96px; */
 }
 
 .imageContainer {
@@ -37,5 +31,5 @@
   color: var(--color-secondary);
   font-size: 64px;
   position: absolute;
-  bottom: 80px;
+  bottom: -8px;
 }

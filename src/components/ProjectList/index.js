@@ -1,7 +1,6 @@
-import projects from "@/lib/projects";
 import ProjectCard from "../ProjectCard";
 
-export default function ProjectList() {
+export default function ProjectList({ projects }) {
   return (
     <section>
       {projects.map((project) => (

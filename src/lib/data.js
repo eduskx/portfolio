@@ -33,4 +33,23 @@ const projects = [
   },
 ];
 
-export default projects;
+const aboutMeText = `
+I am a passionate Frontend Developer with over two years of hands-on experience in developing user-friendly web applications. 
+My dual studies in Business Informatics and intensive further training have provided me with a solid foundation in HTML, CSS, JavaScript, React.js, and Next.js. 
+I strategically utilize these technologies to create efficient and user-centered solutions that contribute to the success of every project. 
+
+With my experience in agile project management, I can quickly adapt to new requirements and work effectively in a team. 
+My passion for web development drives me to constantly seek innovative approaches and implement them successfully.
+`;
+
+const techStack = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React.js",
+  "Next.js",
+  "Git",
+  "Responsive Design",
+];
+
+export { projects, aboutMeText, techStack };

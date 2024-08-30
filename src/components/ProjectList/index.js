@@ -3,10 +3,10 @@ import ProjectCard from "../ProjectCard";
 
 export default function ProjectList() {
   return (
-    <div>
+    <section>
       {projects.map((project) => (
         <ProjectCard project={project} />
       ))}
-    </div>
+    </section>
   );
 }

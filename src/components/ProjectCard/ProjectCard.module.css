@@ -22,7 +22,6 @@
   color: var(--color-secondary);
   font-weight: 500;
   width: inherit;
-  line-height: 100%;
 }
 
 .description {
@@ -38,4 +37,9 @@
   font-family: var(--font-roboto);
   font-weight: 500;
   padding: 0 32px 8px 0;
+}
+
+.image {
+  padding: 4px 0 32px 0;
+  height: auto;
 }

@@ -13,8 +13,8 @@ export default function ProjectCard({ project }) {
         src={imageUrl}
         width={250}
         height={300}
-        alt="image"
-        style={{ padding: "4px 0 32px 0" }}
+        alt={`preview image for project ${id}`}
+        className={styles.image}
       />
       <p className={styles.description}>{description}</p>
       <Link href={projectUrl} target="_blank" className={styles.link}>

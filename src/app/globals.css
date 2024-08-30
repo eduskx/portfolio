@@ -16,7 +16,7 @@ body {
 }
 
 main {
-  padding-top: 128px;
+  padding: 128px 32px 0 32px;
 }
 
 p {
@@ -29,6 +29,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-space-grotesk);
+  line-height: 100%;
 }
 
 :root {

@@ -13,17 +13,17 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-export const metadata = {
-  title: "Eduards Portfolio",
-  description: "Portfolio Website from Eduard Lisovskij",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${roboto.variable}`}>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio // Eduard Lisovskij</title>
+      </head>
       <body>
         <Header links={["Projects", "About Me", "Test"]} />
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );

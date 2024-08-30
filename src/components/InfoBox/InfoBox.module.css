@@ -1,0 +1,41 @@
+.image {
+  object-fit: cover;
+  width: auto;
+  margin-bottom: 96px;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+
+.name {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: right;
+  position: absolute;
+  bottom: 64px;
+}
+
+.container {
+  padding-bottom: 64px;
+}
+
+.divider {
+  border: 1px solid var(--color-secondary);
+  margin-left: -32px;
+  width: 80%;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.arrow {
+  color: var(--color-secondary);
+  font-size: 64px;
+  position: absolute;
+  bottom: 80px;
+}

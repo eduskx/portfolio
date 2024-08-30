@@ -1,8 +1,17 @@
-// import { Inter } from 'next/font/google'
+import { Space_Grotesk, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-// const inter = Inter({ subsets: ['latin'] })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-roboto",
+});
 
 export const metadata = {
   title: "Eduards Portfolio",
@@ -11,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${spaceGrotesk.variable} ${roboto.variable}`}>
       <body>
         <Header links={["Projects", "About Me", "Test"]} />
         <main>{children}</main>

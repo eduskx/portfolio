@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-font-primary);
 }
 
 main {
@@ -21,8 +21,19 @@ main {
 
 p {
   line-height: 1.3rem;
+  font-family: var(--font-roboto);
+  color: var(--color-font-secondary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-space-grotesk);
 }
 
 :root {
   --color-primary: #24262c;
+  --color-secondary: #faf8f8;
+  --color-font-primary: #a7a6a6;
+  --color-font-secondary: #f6f6f6;
 }

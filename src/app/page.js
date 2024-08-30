@@ -1,9 +1,9 @@
-import ProjectsCarousel from "@/components/ProjectsCarousel";
+import ProjectList from "@/components/ProjectList";
 
 export default function HomePage() {
   return (
     <>
-      <ProjectsCarousel />
+      <ProjectList />
     </>
   );
 }

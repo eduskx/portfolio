@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./ProjectCard.module.css";
 
 export default function ProjectCard({ project }) {
-  const { id, title, imageUrl, description } = project;
+  const { id, title, imageUrl, description, projectUrl } = project;
 
   return (
     <div className={styles.container}>
@@ -13,9 +14,12 @@ export default function ProjectCard({ project }) {
         width={250}
         height={300}
         alt="image"
-        style={{ padding: "8px 0 32px 0" }}
+        style={{ padding: "4px 0 32px 0" }}
       />
-      <p>{description}</p>
+      <p className={styles.description}>{description}</p>
+      <Link href={projectUrl} target="_blank" className={styles.link}>
+        see more here
+      </Link>
     </div>
   );
 }

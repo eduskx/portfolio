@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./LandingSection.module.css";
+import ArrowDown from "/public/arrow-down-icon.svg";
 
 export default function LandingSection({ title, image, name }) {
   return (
@@ -13,7 +14,7 @@ export default function LandingSection({ title, image, name }) {
           alt="picture of myself"
           className={styles.image}
         />
-        <p className={styles.arrow}>⬇</p>
+        <ArrowDown className={styles.arrowDown} />
         <h1 className={styles.name}>{name}</h1>
       </div>
       <div className="section-divider"></div>

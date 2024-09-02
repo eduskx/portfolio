@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28.024" height="31.107" viewBox="0 0 28.024 31.107">
-  <g id="Gruppe_32" data-name="Gruppe 32" transform="matrix(-0.799, -0.602, 0.602, -0.799, -483.992, 849.847)">
-    <path id="Pfad_4" data-name="Pfad 4" d="M4066.336,3852.458l10.216,9.327,10.237-9.327" transform="translate(-3970.836 -2888.76)" fill="none" stroke="#faf8f8" stroke-width="4"/>
-    <path id="Pfad_5" data-name="Pfad 5" d="M4112.706,3777.071v25.908" transform="translate(-4007.061 -2830)" fill="none" stroke="#faf8f8" stroke-width="4"/>
-  </g>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="64px" height="64px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#FAF8F8" transform="rotate(45)matrix(1, 0, 0, -1, 0, 0)">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <rect x="0" fill="none" width="20" height="20"/> <g> <path d="M9 2h2v12l4-4 2 1-7 7-7-7 2-1 4 4V2z"/> </g> </g>
+</svg>

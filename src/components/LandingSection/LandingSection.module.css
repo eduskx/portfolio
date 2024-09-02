@@ -27,9 +27,8 @@
   position: relative;
 }
 
-.arrow {
-  color: var(--color-secondary);
-  font-size: 64px;
+.arrowDown {
   position: absolute;
-  bottom: -8px;
+  bottom: -16px;
+  left: 0;
 }

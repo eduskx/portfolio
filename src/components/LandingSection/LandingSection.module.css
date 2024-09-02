@@ -1,7 +1,6 @@
 .image {
   object-fit: cover;
   width: auto;
-  /* margin-bottom: 96px; */
 }
 
 .title {
@@ -17,10 +16,6 @@
   text-align: right;
   position: absolute;
   bottom: -24px;
-}
-
-.container {
-  /* padding-bottom: 96px; */
 }
 
 .imageContainer {

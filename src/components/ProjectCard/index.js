@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./ProjectCard.module.css";
+import externalLinkUrl from "/public/external-link-icon.svg?url";
 
 export default function ProjectCard({ project }) {
   const { id, title, imageUrl, description, projectUrl } = project;
@@ -19,6 +20,13 @@ export default function ProjectCard({ project }) {
       <p className={styles.description}>{description}</p>
       <Link href={projectUrl} target="_blank" className={styles.link}>
         see more here
+        <Image
+          src={externalLinkUrl}
+          width={32}
+          height={32}
+          alt="external link icon"
+          className={styles.externalLinkIcon}
+        />
       </Link>
     </article>
   );

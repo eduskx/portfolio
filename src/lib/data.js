@@ -52,4 +52,22 @@ const techStack = [
   "Responsive Design",
 ];
 
-export { projects, aboutMeText, techStack };
+const contactInformation = [
+  {
+    social: "github",
+    displayName: "eduskx",
+    url: "https://github.com/eduskx",
+  },
+  {
+    social: "linkedIn",
+    displayName: "Eduard Lisovskij",
+    url: "https://www.linkedin.com/in/eduard-lisovskij/",
+  },
+  {
+    social: "mail",
+    displayName: "eduard.lisovskij@gmail.com",
+    url: "mailto:eduard.lisovskij@gmail.com",
+  },
+];
+
+export { projects, aboutMeText, techStack, contactInformation };

@@ -32,8 +32,12 @@ h3 {
   line-height: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .section-divider {
-  border: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary);
   margin: 96px 0 96px -32px;
   width: 80%;
 }

@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
   const { id, title, imageUrl, description, projectUrl } = project;
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.projectNumber}>({id})</p>
       <Image
@@ -20,6 +20,6 @@ export default function ProjectCard({ project }) {
       <Link href={projectUrl} target="_blank" className={styles.link}>
         see more here
       </Link>
-    </div>
+    </article>
   );
 }

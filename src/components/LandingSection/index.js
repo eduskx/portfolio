@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./InfoBox.module.css";
+import styles from "./LandingSection.module.css";
 
-export default function InfoBox({ title, image, name }) {
+export default function LandingSection({ title, image, name }) {
   return (
     <section className={styles.container}>
       <h2 className={styles.title}>{title}</h2>

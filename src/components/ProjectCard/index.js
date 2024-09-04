@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
       <Image
         src={imageUrl}
         width={250}
-        height={300}
+        height={200}
         alt={`preview image for project ${id}`}
         className={styles.image}
       />

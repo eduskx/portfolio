@@ -8,7 +8,7 @@ export default function ProjectList({ projects }) {
         MY <br /> PROJECTS
       </h2>
       {projects.map((project) => (
-        <ProjectCard project={project} />
+        <ProjectCard project={project} className={styles.projectCard} />
       ))}
       <div className="section-divider"></div>
     </section>

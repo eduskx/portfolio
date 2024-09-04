@@ -4,3 +4,7 @@
   text-align: right;
   padding-bottom: 64px;
 }
+
+.projectCard {
+  border: 1px solid red;
+}

@@ -8,10 +8,8 @@ const projects = [
     id: "01",
     title: "HAMMERHART",
     imageUrl: dummyImage,
-    description: `Hammerhart is a web app designed for all DIY enthusiasts and hobbyists
-        who want to discover new projects and manage their own ideas. The app
-        offers an intuitive user interface and enables seamless management for
-        all your projects — from creating and editing to deleting projects.`,
+    description: `Hammerhart ist eine Web-App, die sich an alle DIY-Enthusiasten und Heimwerker richtet, die neue Projekte entdecken und ihre eigenen Ideen verwalten möchten.
+Die App bietet eine intuitive Benutzeroberfläche und ermöglicht eine nahtlose Verwaltung von Projekten – vom Erstellen über das Bearbeiten bis hin zum Löschen.`,
     projectUrl: "https://hammerhart.vercel.app/",
   },
   {

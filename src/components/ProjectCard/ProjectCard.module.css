@@ -6,6 +6,31 @@
   margin: auto;
   position: relative;
   padding-bottom: 64px;
+  left: -16px;
+}
+
+.container:nth-child(odd) {
+  left: unset;
+  right: -16px;
+
+  .title {
+    text-align: right;
+    width: unset;
+    left: unset;
+    right: -32px;
+  }
+
+  .projectNumber {
+    align-self: flex-start;
+  }
+
+  .description {
+    text-align: right;
+  }
+
+  .link {
+    align-self: flex-end;
+  }
 }
 
 .projectNumber {
@@ -44,7 +69,7 @@
 
 .image {
   padding: 4px 0 32px 0;
-  height: auto;
+  object-fit: cover;
 }
 
 .externalLinkIcon {

@@ -5,7 +5,7 @@ export default function ProjectList({ projects }) {
   return (
     <section>
       <h2 className={styles.title}>
-        MY <br /> PROJECTS
+        MEINE <br /> PROJEKTE
       </h2>
       {projects.map((project) => (
         <ProjectCard project={project} className={styles.projectCard} />

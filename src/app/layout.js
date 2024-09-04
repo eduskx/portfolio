@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <title>Portfolio // Eduard Lisovskij</title>
       </head>
       <body>
-        <Header links={["Projects", "About Me", "Test"]} />
+        <Header links={["Projekte", "Über mich", "Kontakt"]} />
         {children}
       </body>
     </html>

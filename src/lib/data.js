@@ -23,9 +23,9 @@ Die App bietet eine intuitive Benutzeroberfläche und ermöglicht eine nahtlose 
 ];
 
 const aboutMeText = `
-I am a passionate Frontend Developer with over two years of hands-on experience in developing user-friendly web applications. My dual studies in Business Informatics and intensive further training have provided me with a solid foundation in HTML, CSS, JavaScript, React.js, and Next.js. I strategically utilize these technologies to create efficient and user-centered solutions that contribute to the success of every project. 
+Ich bin ein leidenschaftlicher Frontend Developer mit zwei Jahren praktischer Erfahrung in der Entwicklung von benutzerfreundlichen Webanwendungen. Mein duales Studium in Wirtschaftsinformatik und intensive Weiterbildungen haben mir eine solide Grundlage in HTML, CSS, JavaScript, React.js und Next.js vermittelt. Diese Technologien setze ich gezielt ein, um effiziente und nutzerzentrierte Lösungen zu schaffen, die zum Erfolg jedes Projekts beitragen.
 
-With my experience in agile project management, I can quickly adapt to new requirements and work effectively in a team. My passion for web development drives me to constantly seek innovative approaches and implement them successfully.
+Dank meiner Erfahrung im agilen Projektmanagement kann ich mich schnell an neue Anforderungen anpassen und effektiv im Team arbeiten. Meine Leidenschaft für Webentwicklung treibt mich dazu, ständig nach neuen Ansätzen zu suchen und diese erfolgreich umzusetzen.
 `;
 
 const techStack = [

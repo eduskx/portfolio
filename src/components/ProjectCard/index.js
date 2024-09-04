@@ -19,7 +19,7 @@ export default function ProjectCard({ project }) {
       />
       <p className={styles.description}>{description}</p>
       <Link href={projectUrl} target="_blank" className={styles.link}>
-        see more here
+        Website aufrufen
         <Image
           src={externalLinkUrl}
           width={32}

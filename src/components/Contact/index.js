@@ -6,9 +6,7 @@ import externalLinkUrl from "/public/external-link-icon.svg?url";
 export default function Contact({ contactInformation }) {
   return (
     <section>
-      <h2 className={styles.title}>
-        CONTACT <br /> ME!
-      </h2>
+      <h2 className={styles.title}>KONTAKT</h2>
       <ul>
         {contactInformation.map((element) => (
           <li key={element.url} className={styles.listItem}>

@@ -1,4 +1,5 @@
-import dummyImage from "/public/images/spongi.jpg";
+import hammerhartPreview from "/public/images/hammerhart-preview.png";
+import simonGamePreview from "/public/images/simon-game-preview.png";
 import GithubIcon from "/public/github-icon.svg?url";
 import LinkedInIcon from "/public/linkedIn-icon.svg?url";
 import MailIcon from "/public/mail-icon.svg?url";
@@ -7,30 +8,17 @@ const projects = [
   {
     id: "01",
     title: "HAMMERHART",
-    imageUrl: dummyImage,
+    imageUrl: hammerhartPreview,
     description: `Hammerhart ist eine Web-App, die sich an alle DIY-Enthusiasten und Heimwerker richtet, die neue Projekte entdecken und ihre eigenen Ideen verwalten möchten.
 Die App bietet eine intuitive Benutzeroberfläche und ermöglicht eine nahtlose Verwaltung von Projekten – vom Erstellen über das Bearbeiten bis hin zum Löschen.`,
     projectUrl: "https://hammerhart.vercel.app/",
   },
   {
     id: "02",
-    title: "HAMMERHART BEISPIEL",
-    imageUrl: dummyImage,
-    description: `Hammerhart is a web app designed for all DIY enthusiasts and hobbyists
-        who want to discover new projects and manage their own ideas. The app
-        offers an intuitive user interface and enables seamless management for
-        all your projects — from creating and editing to deleting projects.`,
-    projectUrl: "https://hammerhart.vercel.app/",
-  },
-  {
-    id: "03",
-    title: "HAMMERHART 03",
-    imageUrl: dummyImage,
-    description: `Hammerhart is a web app designed for all DIY enthusiasts and hobbyists
-        who want to discover new projects and manage their own ideas. The app
-        offers an intuitive user interface and enables seamless management for
-        all your projects — from creating and editing to deleting projects.`,
-    projectUrl: "https://hammerhart.vercel.app/",
+    title: "SIMON SAYS GAME",
+    imageUrl: simonGamePreview,
+    description: `Das Simon Says Spiel ist ein interaktives und unterhaltsames Gedächtnisspiel, bei dem du eine wachsende Sequenz von Farben und Tönen wiederholen musst. Das Spiel beginnt einfach, wird aber mit jeder Runde schwieriger, da die Sequenz immer länger wird.`,
+    projectUrl: "https://simon-game-steel-chi.vercel.app/",
   },
 ];
 

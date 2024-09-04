@@ -69,7 +69,7 @@
 
 .image {
   padding: 4px 0 32px 0;
-  object-fit: cover;
+  height: auto;
 }
 
 .externalLinkIcon {

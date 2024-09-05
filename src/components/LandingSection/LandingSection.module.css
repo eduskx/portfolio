@@ -16,10 +16,13 @@
   text-align: right;
   position: absolute;
   bottom: -24px;
+  right: -120px;
+  width: fit-content;
 }
 
 .imageContainer {
   position: relative;
+  width: fit-content;
 }
 
 .arrowDown {

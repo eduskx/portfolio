@@ -7,7 +7,6 @@
 
 .link {
   all: unset;
-  font-family: var(--font-roboto);
   color: var(--color-font-secondary);
   font-weight: 500;
   display: flex;

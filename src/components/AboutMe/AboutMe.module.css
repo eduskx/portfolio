@@ -8,6 +8,29 @@
 .text {
   white-space: pre-wrap;
   font-weight: 300;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
   text-align: justify;
+}
+
+.link {
+  all: unset;
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--color-secondary);
+  color: var(--color-font-secondary);
+  font-weight: 500;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.externalLinkIcon {
+  margin-bottom: -2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }

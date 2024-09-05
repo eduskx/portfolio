@@ -13,12 +13,13 @@ import Contact from "@/components/Contact";
 export default function HomePage() {
   return (
     <main>
-      <LandingSection
-        title="FRONTEND DEVELOPER"
-        image={selfie}
-        name="EDUARD LISOVSKIJ"
+      <LandingSection image={selfie} />
+      <AboutMe
+        text={aboutMeText}
+        techStack={techStack}
+        cvName="Lebenslauf_Eduard_Lisovskij.pdf"
+        certificateName="Zertifikat_Eduard_Lisovskij.pdf"
       />
-      <AboutMe text={aboutMeText} techStack={techStack} />
       <ProjectList projects={projects} />
       <Contact contactInformation={contactInformation} />
     </main>

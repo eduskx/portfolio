@@ -1,5 +1,6 @@
 import hammerhartPreview from "/public/images/hammerhart-preview.png";
 import simonGamePreview from "/public/images/simon-game-preview.png";
+import drumKitPreview from "/public/images/drum-kit-preview.png";
 import GithubIcon from "/public/github-icon.svg?url";
 import LinkedInIcon from "/public/linkedIn-icon.svg?url";
 import MailIcon from "/public/mail-icon.svg?url";
@@ -17,8 +18,17 @@ Die App bietet eine intuitive Benutzeroberfläche und ermöglicht eine nahtlose 
     id: "02",
     title: "SIMON SAYS GAME",
     imageUrl: simonGamePreview,
-    description: `Das Simon Says Spiel ist ein interaktives und unterhaltsames Gedächtnisspiel, bei dem du eine wachsende Sequenz von Farben und Tönen wiederholen musst. Das Spiel beginnt einfach, wird aber mit jeder Runde schwieriger, da die Sequenz immer länger wird.`,
+    description:
+      "Das Simon Says Spiel ist ein unterhaltsames Gedächtnisspiel, bei dem du eine wachsende Sequenz von Farben und Tönen wiederholen musst. Das Spiel beginnt einfach, wird aber mit jeder Runde schwieriger, da die Sequenz immer länger wird.",
     projectUrl: "https://simon-game-steel-chi.vercel.app/",
+  },
+  {
+    id: "03",
+    title: "DRUM KIT",
+    imageUrl: drumKitPreview,
+    description:
+      "Das Drum Kit ist ein interaktives Webprojekt, mit dem du verschiedene Schlagzeugklänge entweder per Mausklick oder über die Tastatur abspielen kannst. Es bietet ein kreatives Erlebnis, das es dir ermöglicht, eigene Rhythmen zu erzeugen und spielerisch mit verschiedenen Sounds zu experimentieren.",
+    projectUrl: "https://drum-kit-sand-three.vercel.app/",
   },
 ];
 

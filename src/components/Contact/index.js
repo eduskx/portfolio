@@ -23,7 +23,7 @@ export default function Contact({ contactInformation }) {
                 src={externalLinkUrl}
                 width={32}
                 height={32}
-                alt="external link icon"
+                alt="External link icon"
                 className={styles.externalLinkIcon}
               />
             </Link>

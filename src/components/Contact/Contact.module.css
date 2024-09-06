@@ -24,3 +24,10 @@
 .externalLinkIcon {
   margin-bottom: 8px;
 }
+
+@media (min-width: 768px) {
+  .title {
+    padding-bottom: 0;
+    margin-bottom: -40px;
+  }
+}

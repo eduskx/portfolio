@@ -7,10 +7,9 @@ export default function ProjectList({ projects }) {
       <h2 className={styles.title}>
         MEINE <br /> PROJEKTE
       </h2>
-      {projects.map((project) => (
-        <ProjectCard project={project} />
+      {projects.map((project, index) => (
+        <ProjectCard key={index} project={project} />
       ))}
-      <div className="section-divider"></div>
     </section>
   );
 }

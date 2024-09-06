@@ -16,12 +16,11 @@ export default function LandingSection({ image }) {
           alt="picture of myself"
           className={styles.image}
         />
-        <ArrowDown className={styles.arrowDown} />
+        {/* <ArrowDown className={styles.arrowDown} /> */}
         <h1 className={styles.name}>
           EDUARD <br /> LISOVSKIJ
         </h1>
       </div>
-      <div className="section-divider"></div>
     </section>
   );
 }

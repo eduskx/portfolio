@@ -1,5 +1,4 @@
 .title {
-  margin-top: 96px;
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 16px;
@@ -11,5 +10,13 @@
 }
 
 .container {
-  padding-right: 64px;
+  margin-top: 96px;
+  max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 50%;
+    margin-top: 0px;
+  }
 }

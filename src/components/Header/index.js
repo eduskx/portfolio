@@ -6,11 +6,11 @@ export default function Header({ links }) {
       <ul className={styles.listContainer}>
         <li className={styles.name}>Eduard Lisovskij</li>
 
-        <li className={styles.navigationItemsContainer}>
+        <div className={styles.navigationItemsContainer}>
           {links.map((link, index) => (
             <li key={index}>{link}</li>
           ))}
-        </li>
+        </div>
       </ul>
 
       <div className={styles.divider}></div>

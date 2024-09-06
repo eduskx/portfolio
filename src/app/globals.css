@@ -18,6 +18,8 @@ body {
 
 main {
   padding: 160px 10% 64px 10%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 p {
@@ -49,7 +51,9 @@ ul {
   --color-font-secondary: #f6f6f6;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 1000px) {
   main {
+    padding: 160px 0 64px 0;
+    border: 1px solid red;
   }
 }

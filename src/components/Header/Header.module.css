@@ -4,15 +4,13 @@
   position: fixed;
   width: 100%;
   background-color: var(--color-primary);
-  z-index: 10;
   align-items: center;
-  padding: 0 10%;
+  z-index: 10;
 }
 
 .listContainer {
   display: flex;
-  padding: 32px 0 16px 0;
-  font-family: var(--font-space-grotesk);
+  padding: 32px 10% 16px 10%;
   color: var(--color-secondary);
   width: 100%;
 }
@@ -25,7 +23,7 @@
 
 .divider {
   border-bottom: 1px solid var(--color-secondary);
-  width: 100%;
+  width: 83%;
 }
 
 .name {
@@ -38,7 +36,6 @@
   }
 
   .listContainer {
-    justify-content: unset;
     gap: 48px;
     align-self: flex-end;
     font-size: 1.1rem;
@@ -52,5 +49,13 @@
   .navigationItemsContainer {
     justify-content: end;
     gap: 48px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .listContainer {
+    max-width: 1000px;
+    align-self: center;
+    padding: 32px 0 16px 0;
   }
 }

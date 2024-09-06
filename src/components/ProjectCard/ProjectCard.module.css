@@ -69,9 +69,20 @@
 .image {
   padding: 4px 0 32px 0;
   object-fit: cover;
-  /* height: auto; */
+  height: auto;
 }
 
 .externalLinkIcon {
   margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .image {
+    height: auto;
+  }
+
+  .container {
+    padding-bottom: 0;
+    margin-top: -10vh;
+  }
 }

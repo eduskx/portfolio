@@ -30,3 +30,20 @@
   bottom: -20px;
   left: 0;
 }
+
+@media (min-width: 768px) {
+  .imageContainer {
+    margin-left: 64px;
+  }
+
+  .name {
+    width: 100vw;
+    font-size: 65px;
+    right: -170%;
+    bottom: 10%;
+  }
+
+  .title {
+    font-size: 55px;
+  }
+}

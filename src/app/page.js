@@ -14,13 +14,16 @@ export default function HomePage() {
   return (
     <main>
       <LandingSection image={selfie} />
+      <div className="section-divider" />
       <AboutMe
         text={aboutMeText}
         techStack={techStack}
         cvName="Lebenslauf_Eduard_Lisovskij.pdf"
         certificateName="Zertifikat_Eduard_Lisovskij.pdf"
       />
+      <div className="section-divider" />
       <ProjectList projects={projects} />
+      <div className="section-divider" />
       <Contact contactInformation={contactInformation} />
     </main>
   );

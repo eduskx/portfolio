@@ -1,10 +1,13 @@
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 export default function Header({ links }) {
   return (
     <nav className={styles.container}>
       <ul className={styles.listContainer}>
-        <li className={styles.name}>Eduard Lisovskij</li>
+        <Link href="#landing" className={styles.name}>
+          Eduard Lisovskij
+        </Link>
 
         <div className={styles.navigationItemsContainer}>
           {links.map((link, index) => (

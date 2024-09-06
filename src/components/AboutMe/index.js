@@ -6,7 +6,7 @@ import externalLinkUrl from "/public/external-link-icon.svg?url";
 
 export default function AboutMe({ text, techStack, cvName, certificateName }) {
   return (
-    <section className={styles.container}>
+    <section id="about-me" className={styles.container}>
       <h2 className={styles.title}>ÜBER MICH</h2>
       <p className={styles.text}>{text}</p>
       <Link

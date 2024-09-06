@@ -14,3 +14,9 @@
     margin-bottom: 15vh;
   }
 }
+
+@media (min-width: 1000px) {
+  .title {
+    margin-bottom: 25vh;
+  }
+}

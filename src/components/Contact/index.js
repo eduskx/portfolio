@@ -5,7 +5,7 @@ import externalLinkUrl from "/public/external-link-icon.svg?url";
 
 export default function Contact({ contactInformation }) {
   return (
-    <section>
+    <section className={styles.container}>
       <h2 className={styles.title}>KONTAKT</h2>
       <ul>
         {contactInformation.map((element) => (

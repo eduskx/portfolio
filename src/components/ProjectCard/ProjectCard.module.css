@@ -86,3 +86,23 @@
     margin-top: -10vh;
   }
 }
+
+@media (min-width: 1000px) {
+  .container {
+    width: 350px;
+    margin-left: 48px;
+    margin-top: -20vh;
+  }
+
+  .container:nth-child(odd) {
+    margin-right: 48px;
+  }
+
+  .image {
+    width: 350px;
+  }
+
+  .title {
+    top: 8px;
+  }
+}

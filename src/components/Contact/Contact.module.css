@@ -31,3 +31,9 @@
     margin-bottom: -40px;
   }
 }
+
+@media (min-width: 1000px) {
+  .container {
+    padding: 0 64px;
+  }
+}

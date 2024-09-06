@@ -38,7 +38,7 @@ export default function AboutMe({ text, techStack, cvName, certificateName }) {
           className={styles.externalLinkIcon}
         />
       </Link>
-      <TechStack techStack={techStack} className={styles.techStack} />
+      <TechStack techStack={techStack} />
     </section>
   );
 }

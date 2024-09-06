@@ -54,8 +54,8 @@
 
 @media (min-width: 1000px) {
   .listContainer {
-    max-width: 1000px;
+    max-width: 1128px;
     align-self: center;
-    padding: 32px 0 16px 0;
+    padding: 32px 64px 16px 64px;
   }
 }

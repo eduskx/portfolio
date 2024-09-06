@@ -33,4 +33,19 @@
 .container {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .text {
+    width: 50%;
+  }
+
+  .title {
+    padding-bottom: 0;
+  }
+
+  .link {
+    align-self: flex-start;
+  }
 }

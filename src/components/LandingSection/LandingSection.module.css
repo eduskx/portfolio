@@ -47,3 +47,22 @@
     font-size: 55px;
   }
 }
+
+@media (min-width: 1000px) {
+  .image {
+    height: 400px;
+  }
+
+  .imageContainer {
+    margin-left: 192px;
+  }
+
+  .name {
+    font-size: 90px;
+    right: -130%;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+}

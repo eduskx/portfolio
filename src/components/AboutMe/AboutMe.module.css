@@ -9,7 +9,8 @@
   white-space: pre-wrap;
   font-weight: 300;
   padding-bottom: 32px;
-  text-align: justify;
+
+  text-align: start;
 }
 
 .link {

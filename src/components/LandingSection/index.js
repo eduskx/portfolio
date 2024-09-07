@@ -8,7 +8,6 @@ export default function LandingSection({ image }) {
       <h2 className={styles.title}>
         FRONTEND <br /> DEVELOPER
       </h2>
-      {/* <div className={styles.imageContainer}> */}
       <Image
         src={image}
         width={200}
@@ -20,7 +19,6 @@ export default function LandingSection({ image }) {
       <h1 className={styles.name}>
         EDUARD <br /> LISOVSKIJ
       </h1>
-      {/* </div> */}
     </section>
   );
 }

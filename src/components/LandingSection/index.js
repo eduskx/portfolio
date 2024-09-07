@@ -4,7 +4,7 @@ import ArrowDown from "/public/arrow-down-icon.svg";
 
 export default function LandingSection({ image }) {
   return (
-    <section id="landing" className={styles.container}>
+    <section id="home" className={styles.container}>
       <h2 className={styles.title}>
         FRONTEND <br /> DEVELOPER
       </h2>

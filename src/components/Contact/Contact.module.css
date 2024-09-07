@@ -13,6 +13,7 @@
   gap: 16px;
   border-bottom: 1px solid var(--color-secondary);
   align-items: center;
+  cursor: pointer;
 }
 
 .listItem {
@@ -25,6 +26,10 @@
   margin-bottom: 8px;
 }
 
+.container {
+  padding-top: 96px;
+}
+
 @media (min-width: 768px) {
   .title {
     padding-bottom: 0;
@@ -34,6 +39,10 @@
 
 @media (min-width: 1000px) {
   .container {
-    padding: 0 64px;
+    padding: 96px 64px 0 64px;
+  }
+
+  .title {
+    font-size: 55px;
   }
 }

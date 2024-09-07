@@ -1,6 +1,7 @@
 import { Space_Grotesk, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { links } from "@/lib/data";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
         <title>Portfolio // Eduard Lisovskij</title>
       </head>
       <body>
-        <Header links={["Projekte", "Über mich", "Kontakt"]} />
+        <Header links={links} />
         {children}
       </body>
     </html>

@@ -5,13 +5,15 @@ export default function Header({ links }) {
   return (
     <nav className={styles.container}>
       <ul className={styles.listContainer}>
-        <li href="#landing" className={styles.name}>
+        <Link href="#home" className={`${styles.name} ${styles.link}`}>
           Eduard Lisovskij
-        </li>
+        </Link>
 
         <div className={styles.navigationItemsContainer}>
-          {links.map((link, index) => (
-            <li key={index}>{link}</li>
+          {links.map((link) => (
+            <Link href={`#${link.id}`} key={link.id} className={styles.link}>
+              {link.name}
+            </Link>
           ))}
         </div>
       </ul>

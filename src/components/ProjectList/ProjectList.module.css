@@ -7,16 +7,15 @@
 .container {
   display: flex;
   flex-direction: column;
+  padding-top: 96px;
 }
 
 @media (min-width: 768px) {
-  .title {
-    margin-bottom: 15vh;
-  }
 }
 
 @media (min-width: 1000px) {
   .title {
-    margin-bottom: 25vh;
+    margin-bottom: 10%;
+    font-size: 55px;
   }
 }

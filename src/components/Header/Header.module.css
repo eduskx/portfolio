@@ -26,6 +26,11 @@
   width: 83%;
 }
 
+.link {
+  all: unset;
+  cursor: pointer;
+}
+
 .name {
   display: none;
 }
@@ -38,17 +43,18 @@
   .listContainer {
     gap: 48px;
     align-self: flex-end;
-    font-size: 1.1rem;
+    font-size: 18px;
+    justify-content: space-between;
   }
 
   .name {
     display: unset;
-    width: 50%;
+    width: fit-content;
   }
 
   .navigationItemsContainer {
-    justify-content: end;
     gap: 48px;
+    width: fit-content;
   }
 }
 

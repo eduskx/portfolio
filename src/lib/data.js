@@ -32,6 +32,21 @@ Die App bietet eine intuitive Benutzeroberfläche und ermöglicht eine nahtlose 
   },
 ];
 
+const links = [
+  {
+    name: "Projekte",
+    id: "projects",
+  },
+  {
+    name: "Über mich",
+    id: "about-me",
+  },
+  {
+    name: "Kontakt",
+    id: "contact",
+  },
+];
+
 const aboutMeText = `
 Ich bin ein leidenschaftlicher Frontend Developer mit zwei Jahren praktischer Erfahrung in der Entwicklung von benutzerfreundlichen Webanwendungen. Mein duales Studium in Wirtschaftsinformatik und intensive Weiterbildungen haben mir eine solide Grundlage in HTML, CSS, JavaScript, React.js und Next.js vermittelt. Diese Technologien setze ich gezielt ein, um effiziente und nutzerzentrierte Lösungen zu schaffen, die zum Erfolg jedes Projekts beitragen.
 
@@ -69,4 +84,4 @@ const contactInformation = [
   },
 ];
 
-export { projects, aboutMeText, techStack, contactInformation };
+export { projects, links, aboutMeText, techStack, contactInformation };

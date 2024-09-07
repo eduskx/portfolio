@@ -1,10 +1,13 @@
 .container {
   padding-top: 96px;
+  width: 100%;
+  position: relative;
 }
 
 .image {
   object-fit: cover;
   width: auto;
+  margin-left: 10%;
 }
 
 .title {
@@ -18,15 +21,10 @@
   font-weight: 500;
   color: var(--color-secondary);
   text-align: right;
+  width: fit-content;
   position: absolute;
-  bottom: -24px;
-  right: -120px;
-  width: fit-content;
-}
-
-.imageContainer {
-  position: relative;
-  width: fit-content;
+  right: 0;
+  bottom: -32px;
 }
 
 .arrowDown {
@@ -36,15 +34,9 @@
 }
 
 @media (min-width: 768px) {
-  .imageContainer {
-    margin-left: 64px;
-  }
-
   .name {
-    width: 100vw;
     font-size: 65px;
-    right: -170%;
-    bottom: 10%;
+    bottom: 32px;
   }
 
   .title {
@@ -55,15 +47,11 @@
 @media (min-width: 1000px) {
   .image {
     height: 400px;
-  }
-
-  .imageContainer {
-    margin-left: 192px;
+    margin-left: 15%;
   }
 
   .name {
     font-size: 90px;
-    right: -130%;
   }
 
   .title {

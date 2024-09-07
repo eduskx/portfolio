@@ -8,19 +8,19 @@ export default function LandingSection({ image }) {
       <h2 className={styles.title}>
         FRONTEND <br /> DEVELOPER
       </h2>
-      <div className={styles.imageContainer}>
-        <Image
-          src={image}
-          width={200}
-          height={270}
-          alt="picture of myself"
-          className={styles.image}
-        />
-        {/* <ArrowDown className={styles.arrowDown} /> */}
-        <h1 className={styles.name}>
-          EDUARD <br /> LISOVSKIJ
-        </h1>
-      </div>
+      {/* <div className={styles.imageContainer}> */}
+      <Image
+        src={image}
+        width={200}
+        height={270}
+        alt="picture of myself"
+        className={styles.image}
+      />
+      {/* <ArrowDown className={styles.arrowDown} /> */}
+      <h1 className={styles.name}>
+        EDUARD <br /> LISOVSKIJ
+      </h1>
+      {/* </div> */}
     </section>
   );
 }

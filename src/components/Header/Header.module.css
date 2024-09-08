@@ -29,6 +29,11 @@
 .link {
   all: unset;
   cursor: pointer;
+  padding-bottom: 4px;
+}
+
+.link:hover {
+  color: var(--color-font-primary);
 }
 
 .name {
@@ -55,6 +60,10 @@
   .navigationItemsContainer {
     gap: 48px;
     width: fit-content;
+  }
+
+  .container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 }
 

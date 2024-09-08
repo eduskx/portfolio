@@ -26,10 +26,19 @@
   width: fit-content;
   align-self: flex-end;
   cursor: pointer;
+  height: 39px;
 }
 
 .externalLinkIcon {
   margin-bottom: -2px;
+  transition: transform 0.4s, margin-bottom 0.4s;
+}
+
+.link:hover {
+  .externalLinkIcon {
+    transform: rotate(45deg);
+    margin-bottom: -6px;
+  }
 }
 
 .container {

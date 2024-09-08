@@ -16,14 +16,23 @@
   cursor: pointer;
 }
 
+.link:hover {
+  .externalLinkIcon {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+  }
+}
+
 .listItem {
   padding-bottom: 64px;
   display: flex;
   gap: 16px;
+  height: 110px;
 }
 
 .externalLinkIcon {
   margin-bottom: 8px;
+  transition: transform 0.4s, margin-bottom 0.4s;
 }
 
 .container {

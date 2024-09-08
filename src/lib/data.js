@@ -34,12 +34,12 @@ Die App bietet eine intuitive Benutzeroberfläche und ermöglicht eine nahtlose 
 
 const links = [
   {
-    name: "Projekte",
-    id: "projects",
+    name: "Über Mich",
+    id: "about-me",
   },
   {
-    name: "Über mich",
-    id: "about-me",
+    name: "Projekte",
+    id: "projects",
   },
   {
     name: "Kontakt",

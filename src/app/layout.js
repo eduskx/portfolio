@@ -1,16 +1,34 @@
-import { Space_Grotesk, Roboto } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import { links } from "@/lib/data";
 
-const spaceGrotesk = Space_Grotesk({
+const spaceGrotesk = localFont({
+  src: [
+    {
+      path: "../../public/fonts/SpaceGrotesk-VariableFont_wght.ttf",
+    },
+  ],
   subsets: ["latin"],
   variable: "--font-space-grotesk",
 });
 
-const roboto = Roboto({
+const roboto = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Roboto-Light.ttf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/Roboto-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/Roboto-Medium.ttf",
+      weight: "500",
+    },
+  ],
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
   variable: "--font-roboto",
 });
 

@@ -65,6 +65,14 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  height: 41px;
+}
+
+.link:hover {
+  .externalLinkIcon {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+  }
 }
 
 .image {
@@ -75,6 +83,7 @@
 
 .externalLinkIcon {
   margin-bottom: 8px;
+  transition: transform 0.4s, margin-bottom 0.4s;
 }
 
 @media (min-width: 768px) {

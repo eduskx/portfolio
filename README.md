@@ -1,17 +1,17 @@
 # Portfolio — Eduard Lisovskij
 
-My personal portfolio: an editorial, single-page site built with Next.js. It presents who I am, how I work, and the projects I've built.
+Mein persönliches Portfolio: eine editorial gestaltete Single-Page-Website, gebaut mit Next.js. Sie zeigt, wer ich bin, wie ich arbeite und welche Projekte ich gebaut habe.
 
-**Live:** _wird über Vercel deployed — URL hier eintragen, sobald verbunden._
+**Live:** [portfolio-eduliso.vercel.app](https://portfolio-eduliso.vercel.app/)
 
 ## Tech
 
 - **Next.js 16** (App Router) & **React 19**
 - **TypeScript**
 - **Tailwind CSS v4**
-- **Motion** for scroll and intro animations
+- **Motion** für Scroll- und Intro-Animationen
 
-## Projects featured
+## Vorgestellte Projekte
 
 | Projekt | Worum geht's | Link |
 |---------|--------------|------|
@@ -19,26 +19,26 @@ My personal portfolio: an editorial, single-page site built with Next.js. It pre
 | **Monatsblick** | Finanz-App mit serverseitiger Budget-Logik und Excel-artigen Formelfeldern | [monatsblick.vercel.app](https://monatsblick.vercel.app/) |
 | **Hammerhart** | Plattform für DIY-Projekte, im Team während der Weiterbildung entwickelt | [hammerhart.vercel.app](https://hammerhart.vercel.app/) |
 
-## Local development
+## Lokale Entwicklung
 
 ```bash
 npm install
 npm run dev      # http://localhost:3000
 ```
 
-Other scripts:
+Weitere Befehle:
 
 ```bash
-npm run build    # production build
-npm run start    # serve the production build
+npm run build    # Production-Build
+npm run start    # Production-Build lokal ausliefern
 npm run lint
 ```
 
 ## Deployment
 
-Deployed on **Vercel** — every push to `main` ships to production, and pull requests get their own preview URL.
+Deployed über **Vercel** — jeder Push auf `main` geht in die Production, Pull Requests bekommen ihre eigene Preview-URL.
 
-## Contact
+## Kontakt
 
 - 📧 eduard.lisovskij@gmail.com
 - 🔗 [LinkedIn](https://www.linkedin.com/in/eduard-lisovskij/)

@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eduard Lisovskij — Frontend Developer",
+  title: "Eduard Lisovskij — Portfolio",
   description:
     "Frontend Developer aus Deutschland — benutzerfreundliche Web-Interfaces mit React, Next.js und TypeScript.",
 };

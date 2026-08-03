@@ -2,7 +2,12 @@ import { Hero } from "@/components/Hero";
 import { ProjectBlock } from "@/components/ProjectBlock";
 import { Contact } from "@/components/Contact";
 import { FadeUp, MaskLine } from "@/components/motion";
-import { aboutStatement, projects } from "@/lib/data";
+import {
+  aboutStatement,
+  coreStack,
+  extendedStack,
+  projects,
+} from "@/lib/data";
 
 export default function Home() {
   return (
@@ -14,16 +19,55 @@ export default function Home() {
         id="about"
         className="border-t border-line px-6 py-24 md:px-10 md:py-40"
       >
-        <FadeUp>
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
-            (Über mich)
-          </p>
-        </FadeUp>
-        <FadeUp delay={0.1}>
-          <p className="mt-8 max-w-[32ch] text-[clamp(1.4rem,3.4vw,2.6rem)] font-normal leading-[1.25] tracking-[-0.01em] text-ink/90 md:ml-[40%] md:mt-10">
-            {aboutStatement}
-          </p>
-        </FadeUp>
+        {/* Zwei Spalten: links Über-mich (Label + Absätze), rechts der
+            Tech-Stack. items-end richtet den kürzeren Tech-Block an der
+            Unterkante aus, sodass er unten sitzt und von der Höhe her leicht in
+            den Über-mich-Block einschneidet. */}
+        <div className="md:grid md:grid-cols-[auto_1fr] md:items-end md:gap-x-16">
+          {/* Spalte 1: Über mich — Label links neben den Absätzen */}
+          <div className="flex flex-col gap-4 md:flex-row md:gap-16">
+            <FadeUp className="md:pt-1">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted md:whitespace-nowrap">
+                (Über mich)
+              </p>
+            </FadeUp>
+            <div className="max-w-[36rem] space-y-6">
+              {aboutStatement.split("\n\n").map((paragraph, i) => (
+                <FadeUp key={i} delay={0.1 + i * 0.1}>
+                  <p className="text-[clamp(1rem,1.5vw,1.25rem)] font-normal leading-[1.5] tracking-[-0.005em] text-ink/90">
+                    {paragraph}
+                  </p>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+
+          {/* Spalte 2: Tech-Stack — linksbündig, unten in der Spalte */}
+          <FadeUp delay={0.2} className="mt-12 md:mt-0">
+            <div className="flex flex-col gap-8">
+              <div>
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+                  Core Stack
+                </p>
+                <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 font-mono text-[13px] uppercase tracking-[0.08em] text-ink/90">
+                  {coreStack.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+                  Auch gearbeitet mit
+                </p>
+                <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 font-mono text-[13px] uppercase tracking-[0.08em] text-muted">
+                  {extendedStack.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </FadeUp>
+        </div>
       </section>
 
       {/* Arbeit */}
@@ -45,7 +89,7 @@ export default function Home() {
       <Contact />
 
       <footer className="border-t border-line px-6 py-8 font-mono text-[11px] uppercase tracking-[0.18em] text-muted md:px-10">
-        © 2026 Eduard Lisovskij — Prototyp
+        © 2026 Eduard Lisovskij
       </footer>
     </main>
   );

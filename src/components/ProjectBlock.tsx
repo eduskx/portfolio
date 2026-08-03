@@ -38,6 +38,14 @@ export function ProjectBlock({
     flip ? ["12%", "-12%"] : ["-12%", "12%"],
   );
   const parallax = [yLeft, yRight];
+
+  // Titel liegt zunächst vollständig über den Previews (keine Überlappung)
+  // und schiebt sich beim Scrollen nur leicht darüber.
+  const yTitle = useTransform(
+    scrollYProgress,
+    [0.15, 0.55],
+    ["-100%", "-72%"],
+  );
   // Statischer Versatz wird bei gespiegelten Projekten mitgespiegelt,
   // damit die Bilder gleich zueinander starten.
   const offsets = flip ? ["md:mt-16", "md:mt-0"] : ["md:mt-0", "md:mt-16"];
@@ -54,6 +62,11 @@ export function ProjectBlock({
             flip ? "md:order-2 md:col-start-5" : "md:col-start-1"
           }`}
         >
+          {/* Mobile: Titel über den Previews, ohne Überlappung */}
+          <h3 className="mb-6 font-black uppercase leading-[0.85] tracking-[-0.03em] text-[clamp(2rem,9vw,3rem)] md:hidden">
+            <MaskLine reversible>{project.title}</MaskLine>
+          </h3>
+
           {/* Desktop: quer, mit Parallax */}
           <div className="hidden items-start gap-3 md:flex md:gap-5">
             {project.desktop.slice(0, 2).map((src, i) => (
@@ -95,13 +108,15 @@ export function ProjectBlock({
             ))}
           </div>
 
-          <h3
-            className={`pointer-events-none absolute top-0 z-10 -translate-y-1/2 font-black uppercase leading-[0.85] tracking-[-0.03em] text-[clamp(2rem,5.5vw,4.5rem)] ${
+          {/* Desktop: Titel absolut, schiebt sich beim Scrollen leicht über die Previews */}
+          <motion.h3
+            style={reduce ? { y: "-78%" } : { y: yTitle }}
+            className={`pointer-events-none absolute top-0 z-10 hidden font-black uppercase leading-[0.85] tracking-[-0.03em] text-[clamp(2rem,5.5vw,4.5rem)] md:block ${
               flip ? "right-0 text-right" : "left-0"
             }`}
           >
             <MaskLine reversible>{project.title}</MaskLine>
-          </h3>
+          </motion.h3>
         </div>
 
         {/* Beschreibung an der Seite */}

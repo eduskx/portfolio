@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import {
   motion,
@@ -9,11 +9,52 @@ import {
   useTransform,
 } from "motion/react";
 import { FadeUp } from "@/components/motion";
-import { heroSupport } from "@/lib/data";
+import {
+  heroSupport,
+  backendStatement,
+  interfaceStatement,
+  interfaceStatementShort,
+} from "@/lib/data";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
+  const nameRef = useRef<HTMLHeadingElement>(null);
+  const kiRef = useRef<HTMLParagraphElement>(null);
   const reduce = useReducedMotion();
+
+  // Wenn Häppchen 2 (KI) in den Namen läuft (v.a. Tablet), wird der Name so
+  // weit verkleinert, dass kein Overflow mehr entsteht. Auf Mobile ist die KI
+  // ausgeblendet, auf großen Screens ist Platz — dort bleibt der Name voll.
+  useEffect(() => {
+    const nameEl = nameRef.current;
+    if (!nameEl) return;
+
+    const fit = () => {
+      nameEl.style.setProperty("--name-scale", "1");
+      const kiEl = kiRef.current;
+      if (!kiEl || kiEl.offsetParent === null) return;
+      const n = nameEl.getBoundingClientRect();
+      const k = kiEl.getBoundingClientRect();
+      const gap = 24;
+      const verticalOverlap = !(k.bottom < n.top || n.bottom < k.top);
+      if (!verticalOverlap) return;
+      const available = n.right - (k.right + gap);
+      if (available >= n.width) return;
+      const scale = Math.max(0.5, available / n.width);
+      nameEl.style.setProperty("--name-scale", scale.toFixed(3));
+    };
+
+    fit();
+    // Erneut messen, sobald Intro-Animationen und Fonts sicher gesetzt sind.
+    const raf = requestAnimationFrame(fit);
+    const timer = window.setTimeout(fit, 1000);
+    window.addEventListener("resize", fit);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.clearTimeout(timer);
+      window.removeEventListener("resize", fit);
+    };
+  }, []);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -67,11 +108,11 @@ export function Hero() {
         </span>
       </motion.h1>
 
-      {/* Mittelfeld: Foto (fliegt von unten ein) + kurze Textpassage */}
+      {/* Mittelfeld: Foto (fliegt von unten ein) + kurze Textpassagen */}
       <div className="relative flex flex-1 items-center py-2">
         <motion.div
           style={photoStyle}
-          className="w-[64vw] max-w-[340px] sm:w-[340px] md:ml-[28%]"
+          className="relative w-[64vw] max-w-[340px] sm:w-[340px] md:ml-[28%]"
         >
           <div className="intro-up">
             <div className="relative aspect-[3/4] w-full overflow-hidden border border-ink/15 bg-line">
@@ -92,39 +133,58 @@ export function Hero() {
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
               Eduard — 2026
             </p>
+            {/* Häppchen 1 auf Mobile: Kurzfassung direkt unter dem Foto */}
+            <p className="mt-4 font-mono text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted md:hidden">
+              {interfaceStatementShort}
+            </p>
           </div>
+
+          {/* Häppchen 1 (Interfaces): direkt rechts neben dem Foto, unten —
+              breites Textfeld, damit der Text in die Breite geht. Nur ab lg,
+              wenn genug Platz ist; sonst greift der Fallback weiter unten. */}
+          <FadeUp
+            immediate
+            delay={0.4}
+            className="absolute bottom-6 left-full hidden w-[38ch] pl-8 lg:block"
+          >
+            <p className="font-mono text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted">
+              {interfaceStatement}
+            </p>
+          </FadeUp>
         </motion.div>
 
+        {/* Häppchen 3 (Backend): oben am rechten Bildschirmrand (ab md) */}
         <FadeUp
           immediate
           delay={0.3}
-          className="ml-auto hidden self-start md:block"
+          className="ml-auto hidden max-w-[26ch] self-start pt-2 md:block"
         >
-          <p className="max-w-[28ch] pt-2 text-right font-mono text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted">
-            Frontend Developer mit zwei Jahren Praxis — React, Next.js,
-            TypeScript. Interfaces, die sich gut anfühlen.
+          <p className="text-right font-mono text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted">
+            {backendStatement}
+          </p>
+        </FadeUp>
+
+        {/* Häppchen 1 Fallback (nur Tablet, md–lg): rutscht unter das Foto und
+            wird rechtsbündig am Bildschirmrand ausgerichtet. Auf Mobile steht
+            stattdessen die Kurzfassung unter dem Foto. */}
+        <FadeUp
+          immediate
+          delay={0.4}
+          className="absolute bottom-0 right-0 hidden max-w-[30ch] md:block lg:hidden"
+        >
+          <p className="text-right font-mono text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted">
+            {interfaceStatement}
           </p>
         </FadeUp>
       </div>
 
-      {/* Fußzeile: Pfeil + Support-Text links, Name (fliegt von rechts ein) */}
-      <div className="flex items-end justify-between gap-6">
-        <FadeUp immediate delay={0.4} className="flex flex-col gap-4">
-          <a
-            href="#work"
-            aria-label="Zu den Projekten scrollen"
-            className="arrow-bounce text-4xl leading-none md:text-6xl"
-          >
-            ↓
-          </a>
-          <p className="max-w-[24ch] font-mono text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted">
-            {heroSupport}
-          </p>
-        </FadeUp>
-
+      {/* Fußzeile: nur der Name (fliegt von rechts ein). Pfeil + Häppchen 2
+          liegen separat im Viewport-Overlay weiter unten. */}
+      <div className="flex justify-end">
         <motion.h2
+          ref={nameRef}
           style={nameStyle}
-          className="text-right font-black uppercase leading-[0.8] tracking-[-0.04em] text-[clamp(2.2rem,11vw,8.5rem)] md:mb-8"
+          className="text-right font-black uppercase leading-[0.8] tracking-[-0.04em] text-[calc(clamp(2.2rem,11vw,8.5rem)_*_var(--name-scale,1))] md:mb-8"
         >
           <span className="intro-right block">
             Eduard
@@ -132,6 +192,32 @@ export function Hero() {
             Lisovskij
           </span>
         </motion.h2>
+      </div>
+
+      {/* Overlay in Höhe des ersten Viewports (svh): verankert den Pfeil fest
+          unten links am Bildschirmrand — unabhängig vom Textfluss, egal welcher
+          Viewport. Häppchen 2 (KI) steht rechts daneben und kann den Pfeil
+          nicht verschieben, da beide absolut an der Unterkante hängen. */}
+      <div className="pointer-events-none absolute inset-x-6 top-0 h-dvh md:inset-x-10">
+        <FadeUp
+          immediate
+          delay={0.4}
+          className="absolute bottom-8 left-0 flex items-end gap-5 md:bottom-10"
+        >
+          <a
+            href="#work"
+            aria-label="Zu den Projekten scrollen"
+            className="arrow-bounce pointer-events-auto shrink-0 text-4xl leading-none md:text-6xl"
+          >
+            ↓
+          </a>
+          <p
+            ref={kiRef}
+            className="hidden max-w-[40ch] pb-1 font-mono text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted md:block"
+          >
+            {heroSupport}
+          </p>
+        </FadeUp>
       </div>
     </section>
   );

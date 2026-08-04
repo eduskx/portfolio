@@ -29,7 +29,7 @@ export const interfaceStatementShort = "Interfaces, die sich gut anfühlen.";
 export const backendStatement =
   "Für mich hört Frontend nicht beim Design auf. Aus meiner Zeit im Backend weiß ich, was hinter einer Schnittstelle passiert.";
 
-export const aboutStatement = `Web-Entwickler mit Fokus auf React, Next.js und TypeScript. Meine Basis habe ich bei der Schwarz Gruppe im Team hinter kaufland.de gelegt: Komponenten nach festen Designrichtlinien gebaut, in einem großen System, das wartbar bleiben muss. Später habe ich noch im Bereich Backend und UX/UI gearbeitet. Ich weiß, was auf der anderen Seite einer Schnittstelle passiert, und arbeite mit Designern auf Augenhöhe.
+export const aboutStatement = `Frontend-Entwickler mit Fokus auf React, Next.js und TypeScript. Meine Basis habe ich bei der Schwarz Gruppe im Team hinter kaufland.de gelegt: Komponenten nach festen Designrichtlinien gebaut, in einem großen System, das wartbar bleiben muss. Später habe ich noch im Bereich Backend und UX/UI gearbeitet. Ich weiß, was auf der anderen Seite einer Schnittstelle passiert, und arbeite mit Designern auf Augenhöhe.
 
 Nach einer zusätzlichen Weiterbildung im Web Development habe ich drei Projekte gebaut, die reale Probleme lösen: eine Finanz-App mit serverseitiger Budget-Logik, einen Doku-Assistenten mit RAG-Pipeline und hybrider Suche, und eine DIY-Plattform für Hobbywerker. Mich interessiert Frontend da, wo es auf Nutzer trifft — Interfaces, die im Gebrauch funktionieren, nicht nur im Design.`;
 

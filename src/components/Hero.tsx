@@ -102,7 +102,7 @@ export function Hero() {
         className="mt-6 font-black uppercase leading-[0.8] tracking-[-0.04em] text-[clamp(2.8rem,13vw,10rem)] md:mt-8"
       >
         <span className="intro-left block">
-          Web
+          Frontend
           <br />
           Developer
         </span>

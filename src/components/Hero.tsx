@@ -198,7 +198,7 @@ export function Hero() {
           unten links am Bildschirmrand — unabhängig vom Textfluss, egal welcher
           Viewport. Häppchen 2 (KI) steht rechts daneben und kann den Pfeil
           nicht verschieben, da beide absolut an der Unterkante hängen. */}
-      <div className="pointer-events-none absolute inset-x-6 top-0 h-dvh md:inset-x-10">
+      <div className="pointer-events-none absolute inset-x-6 top-0 h-svh md:inset-x-10">
         <FadeUp
           immediate
           delay={0.4}

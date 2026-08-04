@@ -13,9 +13,25 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio-eduliso.vercel.app"),
   title: "Eduard Lisovskij — Portfolio",
   description:
     "Frontend Developer aus Deutschland — benutzerfreundliche Web-Interfaces mit React, Next.js und TypeScript.",
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    url: "https://portfolio-eduliso.vercel.app",
+    siteName: "Eduard Lisovskij — Portfolio",
+    title: "Eduard Lisovskij — Portfolio",
+    description:
+      "Frontend Developer aus Deutschland — benutzerfreundliche Web-Interfaces mit React, Next.js und TypeScript.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Eduard Lisovskij — Portfolio",
+    description:
+      "Frontend Developer aus Deutschland — benutzerfreundliche Web-Interfaces mit React, Next.js und TypeScript.",
+  },
 };
 
 export default function RootLayout({
